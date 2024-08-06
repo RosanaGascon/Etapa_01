@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Alta de Producto</title>
+</head>
+
+<body>
+    <div class="header sticky">
+        <div id="nav">
+            <a href="index.html" class="logo"><span>Juguetería</span>Cósmica</a>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a class="active" href="alta.html">Alta</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+            <div class="search-container">
+                <form action="/action_page.php">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><img src="img/icons/arrow_forward.svg" alt=""></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="alta" class="container">
+        <div style="padding:20px">
+            <h2>Alta de Producto</h2>
+            <form action="/submit_product" method="post" enctype="multipart/form-data">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="precio">Precio:</label>
+                <input type="number" id="precio" name="precio" required><br><br>
+
+                <label for="stock">Stock:</label>
+                <input type="number" id="stock" name="stock" required><br><br>
+
+                <label for="marca">Marca:</label>
+                <input type="text" id="marca" name="marca" required><br><br>
+
+                <label for="categoria">Categoría:</label>
+                <input type="text" id="categoria" name="categoria" required><br><br>
+
+                <label for="descripcion_corta">Descripción Corta:</label>
+                <textarea id="descripcion_corta" type="text"name="descripcion_corta" required></textarea><br><br>
+
+                <label for="descripcion_larga">Descripción Larga:</label>
+                <textarea id="descripcion_larga" name="descripcion_larga" required></textarea><br><br>
+
+                <label for="envio_sin_cargo">Envío sin cargo:</label>
+                <input type="checkbox" id="envio_sin_cargo" name="envio_sin_cargo"><br><br>
+
+                <label for="edad_desde">Edad Desde:</label>
+                <input type="number" id="edad_desde" name="edad_desde" required><br><br>
+
+                <label for="edad_hasta">Edad Hasta:</label>
+                <input type="number" id="edad_hasta" name="edad_hasta" required><br><br>
+
+                <label for="foto">Foto:</label>
+                <input type="file" id="foto" name="foto" required><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <!-- Sección de Enlaces Rápidos -->
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="alta.html">Alta</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Sección de Información de Contacto -->
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+                    <p>Teléfono: +123 456 789</p>
+                    <p>Email: <a href="mailto:info@cosmica.com">info@cosmica.com</a></p>
+                </div>
+    
+                <!-- Sección de Redes Sociales -->
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="https://facebook.com/tuempresa" target="_blank"><img src="img/icons/icons8-facebook.svg" alt="Facebook"></a>
+                        <a href="https://twitter.com/tuempresa" target="_blank"><img src="img/icons/icons8-twitter (1).svg" alt="Twitter"></a>
+                        <a href="https://instagram.com/tuempresa" target="_blank"><img src="img/icons/icons8-instagram (1).svg" alt="Instagram"></a>
+                        <!-- Agregar más íconos de redes sociales según sea necesario -->
+                    </div>
+                </div>
+            </div>
+            <!-- Derechos de Autor -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Nombre de la Empresa. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
